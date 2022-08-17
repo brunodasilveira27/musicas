@@ -1,0 +1,110 @@
+:root {
+
+    --background: #1C1C1C;
+    --color: #eee;
+
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    
+}
+
+html, body {
+
+    width: 100%;
+    height: 100vh;
+    background: var(--background);
+    color: var(--color);
+    overflow-x: hidden;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.flex {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.column {
+
+    flex-direction: column;
+
+}
+
+.player {
+
+    width: 500px;
+    height: 500px;
+
+}
+
+.imagem {
+
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+
+}
+
+.player-assets {
+
+    width: 100%;
+    min-height: 60px;
+    padding: 5px;
+
+}
+
+.anterior, .pausar, .tocar, .proxima {
+
+    font-size: 40pt;
+    margin: 20px;
+
+}
+
+.player-barra {
+
+    width: 80%;
+    height: 8px;
+    border: 2px solid;
+    border-radius: 8px;
+    justify-content: flex-start;
+
+}
+
+#progress {
+
+    width: 0;
+    height: 8px;
+
+}
+
+.player-ponto {
+
+    width: 20px;
+    height: 20px;
+    background: var(--color);
+    border-radius: 50%;
+    margin-left: -2px;
+    box-shadow: 2px 2px 2px 2px #00000030 inset;
+
+}
+
+.player-info {
+
+    width: 100%;
+    min-height: 60px;
+    padding: 20px 40px;
+
+}
